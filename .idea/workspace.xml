@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58789b7a-26f9-472d-8d75-b4230aa0ec28" name="Default" comment="Module init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSTreeView.php" />
-      <change type="DELETED" beforePath="Z:\cms.dev\vendor\samsonos\js_treeview\samson.php" afterPath="" />
+    <list default="true" id="58789b7a-26f9-472d-8d75-b4230aa0ec28" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSTreeView.php" afterPath="$PROJECT_DIR$/JSTreeView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="js_treeview.iws" />
@@ -65,8 +64,8 @@
       <file leaf-file-name="JSTreeView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JSTreeView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.078341015" vertical-offset="0" max-vertical-offset="868">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.21543778" vertical-offset="0" max-vertical-offset="868">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -228,7 +227,13 @@
       <option name="project" value="LOCAL" />
       <updated>1414312680876</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed init class">
+      <created>1414312933575</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1414312933575</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -273,7 +278,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Module init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module init" />
+    <MESSAGE value="Changed init class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed init class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -309,8 +315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JSTreeView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.078341015" vertical-offset="0" max-vertical-offset="868">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.21543778" vertical-offset="0" max-vertical-offset="868">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>

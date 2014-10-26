@@ -9,5 +9,5 @@ namespace samson\js\treeview;
 class JSTreeView extends \samson\core\CompressableExternalModule
 {	
 	/** Identifier */
-	protected $id = 'treeview';
+	protected $id = 'js_treeview';
 }
