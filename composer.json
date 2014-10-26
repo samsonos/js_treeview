@@ -1,0 +1,21 @@
+{
+    "name":"samsonos/js_treeview",
+    "description": "SamsonJS TreeView module",
+    "keywords": [ "samsonjs", "treeview"],
+    "authors":[
+        {
+            "name":"Vitaly Iegorov",
+            "email":"egorov@samsonos.com"
+        }
+    ],
+    "license":"Open Software License (OSL) v 3.0",
+    "homepage":"http://samsonphp.com/",
+    "autoload" : {
+        "classmap": ["/"]
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master",
+        "squizlabs/php_codesniffer": "2.0.*@dev",
+        "phpunit/phpunit": "4.2.*"
+    }
+}
