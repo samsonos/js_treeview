@@ -2,7 +2,7 @@
 namespace samson\js\treeview;
 
 /**
- * SamsonPHP exteranl module
+ * SamsonPHP external module
  * @package SamsonJS
  * @author Vitaly Iegorov <vitalyiegorov@gmail.com>
  */

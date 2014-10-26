@@ -64,8 +64,8 @@
       <file leaf-file-name="JSTreeView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JSTreeView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21543778" vertical-offset="0" max-vertical-offset="868">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.078341015" vertical-offset="0" max-vertical-offset="868">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -233,7 +233,13 @@
       <option name="project" value="LOCAL" />
       <updated>1414312933575</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed module identifier">
+      <created>1414312961688</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1414312961688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -279,7 +285,8 @@
     </option>
     <MESSAGE value="Module init" />
     <MESSAGE value="Changed init class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed init class" />
+    <MESSAGE value="Changed module identifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed module identifier" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -315,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JSTreeView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21543778" vertical-offset="0" max-vertical-offset="868">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.078341015" vertical-offset="0" max-vertical-offset="868">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
