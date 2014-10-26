@@ -11,10 +11,10 @@
     "license":"Open Software License (OSL) v 3.0",
     "homepage":"http://samsonphp.com/",
     "autoload" : {
-        "classmap": ["/"]
+        "classmap": ["/src"]
     },
     "require":{
-        "samsonos/cms_app":"*"
+        "samsonos/js_core":"*"
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master",
