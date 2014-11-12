@@ -26,9 +26,9 @@ var SamsonJSTreeview =
 				// Получим подчиненные ветки для данного элемента списка
 				// и если такие имеются то установим специальный стиль
 				// указываабщий на то что ветка может "сворачиваться"
-				if( s( 'ul', li ).length > 0 ) 
+				if( s( 'ul', li ).length > 0 || li.hasClass('hasChildren') )
 				{	
-					li.prepend('<div class="hitarea"></div>');
+					li.prepend('<div class="hitarea openCategoryButton"></div>');
 					li.addClass('collapsable');				
 				}
 				
