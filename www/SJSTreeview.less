@@ -39,11 +39,28 @@
 .sjs-treeview .last.collapsable { background:none; }
 
 /* �������� ��� ������������ ����� ������ */
-.sjs-treeview .notlast.collapsable .hitarea { background-position: -64px -25px;}
+.sjs-treeview .notlast.collapsable .hitarea {}
 /* �������� ��� �������������� ����� ������ */
-.sjs-treeview .notlast.collapsed .hitarea { background-position: -80px -3px; }
+.sjs-treeview .notlast.collapsed .hitarea {  }
 
 /* �������� "�������" ��� ����������� ���� */
 .sjs-treeview .last.collapsable .hitarea { background-position: 0 -111px; }
 /* �������� "������" ��� ����������� ���� */
 .sjs-treeview .last.collapsed .hitarea { background-position: -32px -67px; }
+
+.sjs-treeview {
+  li {
+    &.notlast {
+      &.collapsable {
+        .hitarea {
+          background-position: -64px -25px;
+        }
+        &.collapsed {
+          .hitarea {
+            background-position: -80px -3px;
+          }
+        }
+      }
+    }
+  }
+}

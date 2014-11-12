@@ -3,8 +3,10 @@
  */
 var SamsonJSTreeview = 
 {	
-	treeview : function()
-	{			
+	treeview : function(asyncRendering, asyncCompleteHandler)
+	{
+        var useAsyncRendering = asyncRendering !== undefined ? asyncRendering : false;
+        var completeHandler = asyncCompleteHandler !== undefined ? asyncCompleteHandler : false;
 		// Указатель на самого себя
 		var _self = this;
 		
@@ -42,13 +44,15 @@ var SamsonJSTreeview =
 				li.toggleClass('collapsed');
 				
 			}, false, true );
-			
-			// Обработчик "сворачивания"/"разворачивания" ветки дерева
-			s('.hitarea').click( function(ha)
-			{
-				// "Передернем" класс для сокрытия ветки дерева
-				ha.parent().toggleClass('collapsed');				
-			}, false, true );
+
+
+            // Обработчик "сворачивания"/"разворачивания" ветки дерева
+            s('.hitarea').click( function(ha)
+            {
+                // "Передернем" класс для сокрытия ветки дерева
+                ha.parent().toggleClass('collapsed');
+            }, false, true );
+
 		}		
 		
 		/**
@@ -70,7 +74,43 @@ var SamsonJSTreeview =
 			
 			// Выполним "сворачивание"
 			selector.addClass('collapsed');
-		};		
+		};
+
+        var asyncEvent = function SJSTreeInitHitArea(tree) {
+            s('.openCategoryButton', tree).each(function(link) {
+
+                link.click(function() {
+                    if (!link.hasClass('children-uploaded')) {
+                        var parent = link.parent();
+                        var id = s('.structure_id', parent).html();
+                        var controller = 'structure/addchildren';
+                        if (parent.a('controller') !== undefined ) {
+                            controller = parent.a('controller');
+                        }
+                        var loader = new Loader(s('body'));
+                        loader.show();
+                        s.ajax(controller + '/' + id, function(response) {
+                            response = JSON.parse(response);
+                            parent.append(response.tree);
+                            link.addClass('children-uploaded');
+
+                            if (completeHandler) {
+                                completeHandler(s('ul', parent));
+                            }
+                            loader.hide();
+                        });
+                        parent.removeClass('collapsed');
+                    }
+                });
+            });
+        };
+
+        if (useAsyncRendering) {
+            _self.collapse();
+            asyncEvent(_self);
+        }
+
+
 		
 		// Вернем указатель на самого себя для цепирования
 		return _self;
