@@ -47,7 +47,7 @@ var SamsonJSTreeview =
 
 
             // Обработчик "сворачивания"/"разворачивания" ветки дерева
-            s('.hitarea').click( function(ha)
+            s('.hitarea', _self).click( function(ha)
             {
                 // "Передернем" класс для сокрытия ветки дерева
                 ha.parent().toggleClass('collapsed');
@@ -78,7 +78,6 @@ var SamsonJSTreeview =
 
         var asyncEvent = function SJSTreeInitHitArea(tree) {
             s('.openCategoryButton', tree).each(function(link) {
-
                 link.click(function() {
                     if (!link.hasClass('children-uploaded')) {
                         var parent = link.parent();
@@ -95,6 +94,7 @@ var SamsonJSTreeview =
                             link.addClass('children-uploaded');
 
                             if (completeHandler) {
+                                s('ul', parent).addClass('sjs-treeview');
                                 completeHandler(s('ul', parent));
                             }
                             loader.hide();
