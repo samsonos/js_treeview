@@ -80,14 +80,13 @@ var SamsonJSTreeview =
             s('.openCategoryButton', tree).each(function(link) {
                 link.click(function() {
                     if (!link.hasClass('children-uploaded')) {
+                        link.addClass('loading');
                         var parent = link.parent();
                         var id = s('.structure_id', parent).html();
                         var controller = 'structure/addchildren';
                         if (parent.a('controller') !== undefined ) {
                             controller = parent.a('controller');
                         }
-                        var loader = new Loader(s('body'));
-                        loader.show();
                         s.ajax(controller + '/' + id, function(response) {
                             response = JSON.parse(response);
                             parent.append(response.tree);
@@ -97,7 +96,7 @@ var SamsonJSTreeview =
                                 s('ul', parent).addClass('sjs-treeview');
                                 completeHandler(s('ul', parent));
                             }
-                            loader.hide();
+                            link.removeClass('loading');
                         });
                         parent.removeClass('collapsed');
                     }

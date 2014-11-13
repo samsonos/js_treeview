@@ -35,18 +35,6 @@
 /* ����� ��� ����� ������ � ������� ���� ���� */
 .sjs-treeview  li.collapsable { background-position: 0 -176px; }
 
-/* ��������� ����� ������ ������� ����� - ������ "���������" ����� ���� */
-.sjs-treeview .last.collapsable { background:none; }
-
-/* �������� ��� ������������ ����� ������ */
-.sjs-treeview .notlast.collapsable .hitarea {}
-/* �������� ��� �������������� ����� ������ */
-.sjs-treeview .notlast.collapsed .hitarea {  }
-
-/* �������� "�������" ��� ����������� ���� */
-.sjs-treeview .last.collapsable .hitarea { background-position: 0 -111px; }
-/* �������� "������" ��� ����������� ���� */
-.sjs-treeview .last.collapsed .hitarea { background-position: -32px -67px; }
 
 .sjs-treeview {
   li {
@@ -54,10 +42,40 @@
       &.collapsable {
         .hitarea {
           background-position: -64px -25px;
+          &.loading {
+            background: url("img/hitarea-loader.gif") no-repeat;
+            background-position: 0;
+          }
         }
         &.collapsed {
           .hitarea {
             background-position: -80px -3px;
+            &.loading {
+              background: url("img/hitarea-loader.gif") no-repeat;
+              background-position: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &.last {
+      &.collapsable {
+        background: none;
+        .hitarea {
+          background-position: -64px -25px;
+          &.loading {
+            background: url("img/hitarea-loader.gif") no-repeat;
+            background-position: 0;
+          }
+        }
+        &.collapsed {
+          .hitarea {
+            background-position: -80px -3px;
+            &.loading {
+              background: url("img/hitarea-loader.gif") no-repeat;
+              background-position: 0;
+            }
           }
         }
       }
